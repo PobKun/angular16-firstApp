@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="w-100">
+<p>post works!</p>
+
+<div *ngIf="isLoading">
+    Loading ...
+</div>
+
+<div *ngIf="post !== null">
+    <h2>FOUND : POST</h2>
+    <div *ngFor="let item of post"> 
+        USERID:  <b>{{item.userId}}</b>  <br>
+        ID:  <b>{{item.id}}</b>  <br>
+        TITLE:  <b>{{item.title}}</b> <br>
+        BODY:  <b>{{item.body}}</b>  <br>
+        <a class="btn btn-info" [routerLink]="['/post', item.id]" >Detail</a>
+        <hr />
+    </div>
+</div>
+
+
+<div *ngIf="postByID !== null">
+    <h2>FOUND : POST BY {{postId}}</h2>
+    <div > 
+        USERID:  <b>{{postByID.userId}}</b>  <br>
+        ID:  <b>{{postByID.id}}</b>  <br>
+        TITLE:  <b>{{postByID.title}}</b> <br>
+        BODY:  <b>{{postByID.body}}</b>  <br>
+    </div>
+</div>
+</div>
+

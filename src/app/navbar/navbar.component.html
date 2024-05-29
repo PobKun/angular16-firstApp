@@ -1,0 +1,32 @@
+<div class="w-100 mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-light" style="font-weight: bold;" routerLink="/post">ANGULAR</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/post"  >POST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/credit" >CRDIT / DEBIT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/loop" >LOOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/form" >FORM</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a class="btn btn-info" routerLink="/auth/login" *ngIf="!isLogin">LOGIN</a>
+              <button type="button" class="btn btn-info"  *ngIf="isLogin">Welcome : {{sessionUser.username}}</button>
+              <button type="button" class="btn btn-danger ms-2" (click)="logout()"  *ngIf="isLogin">Logout</button>
+
+            </span>
+          </div>
+        </div>
+      </nav>
+</div>

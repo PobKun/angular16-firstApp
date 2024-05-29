@@ -1,0 +1,9 @@
+<app-navbar></app-navbar>
+<div class="w-100">
+<p>loop numberstring works!</p>
+
+<div *ngFor="let item of numberstring | keyvalue"> 
+    numberstring: <b>{{item.key}}</b> and Type: <b>{{item.value}}</b> 
+</div>
+<div class="btn btn-info">TEST</div>
+</div>

@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="w-100">
+    <div class="container mx-auto">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 border rounded p-2">
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="mb-1">Usernamer (TEST: emilys)</label>
+                        <div class="">
+                        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" >
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="mb-1">Password (TEST: emilyspass)</label>
+                        <div class="">
+                        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary w-100" (click)="onLogin()">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
