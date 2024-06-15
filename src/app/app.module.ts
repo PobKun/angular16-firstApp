@@ -12,6 +12,7 @@ import { PostComponent } from './post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TestComponent } from './test/test/test.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     PostComponent,
     LoginComponent,
     NavbarComponent,
+    TestComponent,
     
   ],
   imports: [
